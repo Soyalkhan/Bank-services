@@ -14,15 +14,15 @@ const Navbar = () => {
         <div className="text-white text-2xl font-bold flex items-center">
           <img src={logo} alt="Brand Logo" className="max-w-44" />
         </div>
-        <div className="hidden md:flex space-x-4">
-          {/* <a href="#" className="text-black hover:bg-blue-700 px-3 py-2 rounded">Home</a>
+        <div className="hidden md:flex space-x-4 ">
+          <a href="#" className="text-black hover:bg-blue-700 px-3 py-2 rounded">Home</a>
           <a href="#" className="text-black hover:bg-blue-700 px-3 py-2 rounded">About</a>
           <a href="#" className="text-black hover:bg-blue-700 px-3 py-2 rounded">Services</a>
-          <a href="#" className="text-black hover:bg-blue-700 px-3 py-2 rounded">Contact</a> */}
+          <a href="#" className="text-black hover:bg-blue-700 px-3 py-2 rounded">Contact</a>
           <button className='w-28 bg-[#e7eaf1] text-[#1b1dc7] p-2 rounded-md'>Sign In</button>
         </div>
         <button
-          className="md:hidden text-white focus:outline-none"
+          className="md:hidden text-black focus:outline-none"
           onClick={toggleMenu}
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -30,11 +30,11 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
-      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
-        <a href="#" className="block text-white hover:bg-gray-700 px-3 py-2 rounded">Home</a>
-        <a href="#" className="block text-white hover:bg-gray-700 px-3 py-2 rounded">About</a>
-        <a href="#" className="block text-white hover:bg-gray-700 px-3 py-2 rounded">Services</a>
-        <a href="#" className="block text-white hover:bg-gray-700 px-3 py-2 rounded">Contact</a>
+      <div className= { `md:hidden ${isOpen ? 'block' : 'hidden'}`}>
+        <a href="#" className="block text-black hover:bg-gray-700 px-3 py-2 rounded">Home</a>
+        <a href="#" className="block text-black hover:bg-gray-700 px-3 py-2 rounded">About</a>
+        <a href="#" className="block text-black hover:bg-gray-700 px-3 py-2 rounded">Services</a>
+        <a href="#" className="block text-black hover:bg-gray-700 px-3 py-2 rounded">Contact</a>
       </div>
     </nav>
   );
