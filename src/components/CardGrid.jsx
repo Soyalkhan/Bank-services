@@ -1,77 +1,259 @@
+// src/CardGrid.js
 import React from 'react';
 import Card from './Card'; // Adjust the path if needed
 
+const servicesData = [
+  {
+    category: "Loans Services",
+    services: [
+      {
+        icon: "💳",
+        title: "Personal Loans",
+        description: [
+          "Unsecured personal loans",
+          "Secured personal loans",
+          "Debt consolidation loans",
+          "Not Sure"
+        ],
+        linkText: "Get Best Offers"
+      },
+      {
+        icon: "🏦",
+        title: "Home Loans",
+        description: [
+          "Fixed-rate mortgages",
+          "Adjustable-rate mortgages (ARMs)",
+          "FHA loans",
+          "VA loans",
+          "USDA loans",
+          "Jumbo loans",
+          "Not Sure"
+        ],
+        linkText: "Check Eligibility"
+      },
+      {
+        icon: "🚗",
+        title: "Auto Loans",
+        description: [
+          "New car loans",
+          "Used car loans",
+          "Refinancing auto loans",
+          "Not Sure"
+        ],
+        linkText: "Get Instant Loan"
+      },
+      {
+        icon: "🎓",
+        title: "Student Loans",
+        description: [
+          "Undergraduate student loans",
+          "Graduate student loans",
+          "Parent loans",
+          "Student loan refinancing",
+          "Not Sure"
+        ],
+        linkText: "Explore Options"
+      },
+      {
+        icon: "🏢",
+        title: "Business Loans",
+        description: [
+          "Small business loans",
+          "SBA loans",
+          "Business lines of credit",
+          "Equipment financing",
+          "Commercial real estate loans",
+          "Not Sure"
+        ],
+        linkText: "Get Started"
+      },
+      {
+        icon: "📈",
+        title: "Credit Builder Loans",
+        description: [
+          "Loans designed to help build or improve credit scores"
+        ],
+        linkText: "Learn More"
+      },
+      {
+        icon: "💵",
+        title: "Payday Loans",
+        description: [
+          "Short-term, high-interest loans for emergency needs"
+        ],
+        linkText: "Apply Now"
+      },
+    ]
+  },
+  {
+    category: "Insurance Services",
+    services: [
+      {
+        icon: "☂️",
+        title: "Life Insurance",
+        description: [
+          "Term life insurance",
+          "Whole life insurance",
+          "Universal life insurance",
+          "Variable life insurance",
+          "Not Sure"
+        ],
+        linkText: "View Plans"
+      },
+      {
+        icon: "❤️",
+        title: "Health Insurance",
+        description: [
+          "Individual health insurance",
+          "Family health insurance plans",
+          "Dental insurance",
+          "Vision insurance",
+          "Not Sure"
+        ],
+        linkText: "Get a Quote"
+      },
+      {
+        icon: "🚗",
+        title: "Auto Insurance",
+        description: [
+          "Liability coverage",
+          "Collision coverage",
+          "Comprehensive coverage",
+          "Uninsured/underinsured motorist coverage",
+          "Personal injury protection (PIP)",
+          "Not Sure"
+        ],
+        linkText: "Check Your Rates"
+      },
+      {
+        icon: "🏠",
+        title: "Homeowners Insurance",
+        description: [
+          "Standard homeowners insurance",
+          "Condo insurance",
+          "Renters insurance",
+          "Landlord insurance",
+          "Not Sure"
+        ],
+        linkText: "Compare Policies"
+      },
+      {
+        icon: "💼",
+        title: "Business Insurance",
+        description: [
+          "General liability insurance",
+          "Professional liability insurance",
+          "Workers’ compensation insurance",
+          "Commercial property insurance",
+          "Business interruption insurance",
+          "Not Sure"
+        ],
+        linkText: "Learn More"
+      },
+    ]
+  },
+  {
+    category: "Specialized Insurance",
+    services: [
+      {
+        icon: "🐾",
+        title: "Pet Insurance",
+        description: [
+          "Coverage for veterinary expenses"
+        ],
+        linkText: "Get a Quote"
+      },
+      {
+        icon: "🔒",
+        title: "Identity Theft Insurance",
+        description: [
+          "Protection against identity theft and related losses"
+        ],
+        linkText: "Protect Now"
+      },
+      {
+        icon: "🏥",
+        title: "Long-term Care Insurance",
+        description: [
+          "Coverage for long-term care services"
+        ],
+        linkText: "Explore Options"
+      },
+    ]
+  },
+  {
+    category: "Additional Services",
+    services: [
+      {
+        icon: "📊",
+        title: "Financial Counseling",
+        description: [
+          "Debt management plans",
+          "Budgeting assistance",
+          "Credit score improvement advice",
+          "Not Sure"
+        ],
+        linkText: "Schedule a Session"
+      },
+      {
+        icon: "🧮",
+        title: "Loan Calculators",
+        description: [
+          "Mortgage calculators",
+          "Auto loan calculators",
+          "Personal loan calculators"
+        ],
+        linkText: "Calculate Now"
+      },
+    ]
+  },
+  {
+    category: "Customer Support",
+    services: [
+      {
+        icon: "🕓",
+        title: "24/7 Customer Service",
+        description: [
+          "Live chat support",
+          "Phone support",
+          "Email support"
+        ],
+        linkText: "Contact Us"
+      },
+      {
+        icon: "📚",
+        title: "Educational Resources",
+        description: [
+          "Blog articles on financial tips and advice",
+          "FAQ section",
+          "Webinars and workshops"
+        ],
+        linkText: "Learn More"
+      },
+    ]
+  },
+];
+
 const CardGrid = () => {
   return (
-    <div className="p-8">
-      <h1 className="text-2xl font-bold mb-6">Credit Products</h1>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {/* Example Cards */}
-        <Card 
-          icon={<span role="img" aria-label="Credit Card">💳</span>}
-          title="Credit Cards"
-          description="From 50+ Options, Choose a card matching your lifestyle & needs"
-          linkText="Get Best Offers"
-        />
-        <Card 
-          icon={<span role="img" aria-label="Loan">🏦</span>}
-          title="Personal Loan"
-          description="Select the best offer curated just for you from a wide choice of Banks & NBFC’s"
-          linkText="Check Eligibility"
-        />
-        <Card 
-          icon={<span role="img" aria-label="Micro Loan">💰</span>}
-          title="Micro Loans"
-          description="Instant small ticket loans to meet your immediate cash needs"
-          linkText="Get Instant Loan"
-        />
-        <Card 
-          icon={<span role="img" aria-label="Business Loan">🏢</span>}
-          title="Business Loan"
-          description="Expand your business with loans at low interest rates"
-          linkText="Check Eligibility"
-        />
-        
-      </div>
-    
-      <h1 className="text-2xl font-bold mb-6 mt-9">Insurance & Investment</h1>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {/* Example Cards with Labels */}
-        <Card 
-          label="Up to 10% Off"
-          icon={<span role="img" aria-label="Umbrella">☂️</span>}
-          title="Term Life Insurance"
-          description="Safeguard your loved ones from future uncertainties"
-          linkText="Starting from ₹ 473/month*"
-        />
-        <Card 
-          label="Tax Free Returns"
-          icon={<span role="img" aria-label="Investment">📈</span>}
-          title="Investment Plan"
-          description="Plans starting from ₹1,000 with Inbuilt Life Cover & Tax Benefits"
-          linkText="View Plans"
-        />
-        <Card 
-          label="Pre-Approved"
-          icon={<span role="img" aria-label="Health">❤️</span>}
-          title="Health Insurance"
-          description="Protect yourself and your family against medical expenses with up to 25% discount"
-          linkText="Starting @ ₹ 8/day*"
-        />
-        <Card 
-          icon={<span role="img" aria-label="Mutual Funds">🌱</span>}
-          title="Direct Mutual Funds"
-          description="Get higher returns on your Mutual Fund investments"
-          linkText="Check Your Investment"
-        />
-        {/* Add more cards as needed */}
-      </div>
-    
+    <div className="p-8 items-center">
+      {servicesData.map((category, categoryIndex) => (
+        <div key={categoryIndex}>
+          <h1 className="text-2xl ml-6 mt-12 font-bold mb-6 text-blue-800">{category.category}</h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {category.services.map((service, serviceIndex) => (
+              <Card 
+                key={serviceIndex}
+                icon={<span role="img" aria-label={service.title}>{service.icon}</span>}
+                title={service.title}
+                description={service.description.join(', ')}
+                linkText={service.linkText}
+              />
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
-
-    
   );
 };
 
