@@ -15,10 +15,10 @@ const Navbar = () => {
           <img src={logo} alt="Brand Logo" className="max-w-44" />
         </div>
         <div className="hidden md:flex space-x-4 ">
-          <a href="#" className="text-black hover:bg-blue-700 px-3 py-2 rounded">Home</a>
-          <a href="#" className="text-black hover:bg-blue-700 px-3 py-2 rounded">About</a>
-          <a href="#" className="text-black hover:bg-blue-700 px-3 py-2 rounded">Services</a>
-          <a href="#" className="text-black hover:bg-blue-700 px-3 py-2 rounded">Contact</a>
+          <a href="#" className="text-black hover:text-yellow-50 hover:bg-blue-700 px-3 py-2 rounded transition-all">Home</a>
+          <a href="#" className="text-black hover:text-yellow-50 hover:bg-blue-700 px-3 py-2 rounded">About</a>
+          <a href="#" className="text-black hover:text-yellow-50 hover:bg-blue-700 px-3 py-2 rounded">Services</a>
+          <a href="#" className="text-black hover:text-yellow-50 hover:bg-blue-700 px-3 py-2 rounded">Contact</a>
           <button className='w-28 bg-[#e7eaf1] text-[#1b1dc7] p-2 rounded-md'>Sign In</button>
         </div>
         <button
@@ -31,10 +31,10 @@ const Navbar = () => {
         </button>
       </div>
       <div className= { `md:hidden ${isOpen ? 'block' : 'hidden'}`}>
-        <a href="#" className="block text-black hover:bg-gray-700 px-3 py-2 rounded">Home</a>
-        <a href="#" className="block text-black hover:bg-gray-700 px-3 py-2 rounded">About</a>
-        <a href="#" className="block text-black hover:bg-gray-700 px-3 py-2 rounded">Services</a>
-        <a href="#" className="block text-black hover:bg-gray-700 px-3 py-2 rounded">Contact</a>
+        <a href="#" className="block text-black hover:text-yellow-50 hover:bg-gray-700 px-3 py-2 rounded">Home</a>
+        <a href="#" className="block text-black hover:text-yellow-50 hover:bg-gray-700 px-3 py-2 rounded">About</a>
+        <a href="#" className="block text-black hover:text-yellow-50 hover:bg-gray-700 px-3 py-2 rounded">Services</a>
+        <a href="#" className="block text-black hover:text-yellow-50 hover:bg-gray-700 px-3 py-2 rounded">Contact</a>
       </div>
     </nav>
   );
