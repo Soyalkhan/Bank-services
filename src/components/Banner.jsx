@@ -21,7 +21,7 @@ const Banner = () => {
                 <p className="text-base md:text-sm text-[#8d9297] mb-4">
                     Your credit score is more than just a number. It’s the key to help you unlock the doors to the best loans & credit card offers available.
                 </p>
-                <button className='bg-[#1b1dc7] text-white rounded w-full md:w-56 p-2 mt-3 shadow-sm'>
+                <button className='bg-[#1b1dc7] text-white rounded w-full md:w-56 p-2 mt-3 shadow-sm hover:bg-sky-400 border-none hover:text-white hover:ease-in duration-300'>
                     Get Free Credit Report
                 </button>
             </div>

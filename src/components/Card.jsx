@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = ({ icon, title, description, linkText }) => {
     return (
-        <div className="bg-white shadow-md cursor-pointer rounded-lg p-6 flex flex-col items-start space-y-4 transform hover:shadow-xl transition duration-300">
+        <div className="bg-white shadow-lg cursor-pointer rounded-lg p-6 flex flex-col items-start space-y-4 transform hover:shadow-2xl transition duration-300">
             <div className=' flex gap-6 items-center'>
                 {/* Title */}
                 <h2 className="text-sm font-bold uppercase">{title}</h2>
