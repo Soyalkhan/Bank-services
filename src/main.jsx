@@ -6,13 +6,17 @@ import { createBrowserRouter, RouterProvider, Route, createRoutesFromElements } 
 import TermsAndConditions from './pages/TermsAndConditions.jsx';
 import Layout from './Layout.jsx';
 import Home from './components/Home.jsx';
+import CustomerDetailsForm from './components/CustomerDetailsForm.jsx';
+import RefundAndCancellationPolicy from './pages/RefundAndCancellationPolicy.jsx';
 
 // Create your router
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path='' element={<Home/>}/>
-      <Route path="/termandconditions" element={<TermsAndConditions/>} />
+      <Route path="/RefundAndCancellationPolicy" element={<RefundAndCancellationPolicy />} />
+      <Route path="/CustomerDetailsForm" element={<CustomerDetailsForm />} />
+      <Route path="/TermsAndConditions" element={<TermsAndConditions/>} />
     </Route>
   )
 );

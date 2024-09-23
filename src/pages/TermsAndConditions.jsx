@@ -6,7 +6,7 @@ const TermsAndConditions = () => {
   return (
 <>
 <Navbar/>
-    <div className="container mx-auto p-28">
+    <div className="container mx-auto p-16">
      
       <h1 className=" text-blue-800 text-4xl font-bold mb-6">Terms and Conditions</h1>
 

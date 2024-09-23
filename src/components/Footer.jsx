@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link, NavLink } from "react-router-dom";
 import TermsAndConditions from '../pages/TermsAndConditions';
+import RefundAndCancellationPolicy from '../pages/RefundAndCancellationPolicy';
 
 const Footer = () => {
   return (
@@ -12,18 +13,24 @@ const Footer = () => {
         </p>
         <div className="mt-2">
           {/* <a href="/PrivacyPolicy" className="text-gray-400 hover:text-white mx-2">Privacy Policy</a> */}
-          <NavLink
+          <Link
             to="/PrivacyPolicy"
             className='text-gray-400 hover:text-white mx-2'
           >
             Privacy Policy
-          </NavLink>
-          <NavLink
-            to="/termandconditions"
+          </Link>
+          <Link
+            to="/TermsAndConditions"
             className='text-gray-400 hover:text-white mx-2'
           >
             Terms of Service
-          </NavLink>
+          </Link>
+          <Link
+            to="/RefundAndCancellationPolicy"
+            className='text-gray-400 hover:text-white mx-2'
+          >
+            Refund and cancellation
+          </Link>
         </div>
       </div>
     </footer>
